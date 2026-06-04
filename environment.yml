@@ -1,0 +1,8 @@
+﻿name: sf-env
+channels:
+  - snowflake
+dependencies:
+  - streamlit
+  - altair
+  - pandas
+  - snowflake-snowpark-python
