@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Local env / secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Snowflake CLI
+.snowflake/
+
+# Output / build artifacts
+output/
+build/
+*.zip
+*.tar.gz
+
+# Office temp files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# OS files
+.DS_Store
+desktop.ini
+
+# Local helper scripts with secrets
+chat.py
+convert_to_docx.py

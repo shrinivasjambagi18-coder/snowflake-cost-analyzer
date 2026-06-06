@@ -1,0 +1,25 @@
+manifest_version: 1
+
+version:
+  name: v1_0
+  label: "1.0.0"
+  comment: "Snowflake Cost Analyzer v1.0 - AI-powered cost analytics"
+
+artifacts:
+  readme: README.md
+  setup_script: setup.sql
+  default_streamlit: COST_ANALYZER_SCHEMA.COST_ANALYZER_APP
+  extension_code: true
+
+privileges:
+  - privilege: "IMPORTED PRIVILEGES ON DATABASE SNOWFLAKE"
+    description: >
+      Required to read Account Usage views including WAREHOUSE_METERING_HISTORY,
+      QUERY_HISTORY, METERING_DAILY_HISTORY, and STORAGE_USAGE.
+      This data never leaves your Snowflake account.
+
+  - privilege: "EXECUTE CORTEX FUNCTIONS"
+    description: >
+      Optional. Enables AI-generated cost optimization insights using
+      Snowflake Cortex LLMs. The app works without this privilege
+      using built-in rule-based recommendations.
