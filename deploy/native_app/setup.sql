@@ -16,7 +16,7 @@ CREATE SCHEMA IF NOT EXISTS COST_ANALYZER_SCHEMA;
 -- Register the Streamlit app pointing at the auto-created root stage
 CREATE OR REPLACE STREAMLIT COST_ANALYZER_SCHEMA.COST_ANALYZER_APP
     FROM '/'
-    MAIN_FILE = '/streamlit_app.py';
+    MAIN_FILE = 'streamlit_app.py';
 
 -- Grant app role access to the schema and Streamlit object
 GRANT USAGE ON SCHEMA COST_ANALYZER_SCHEMA
